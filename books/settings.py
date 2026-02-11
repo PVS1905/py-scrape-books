@@ -14,7 +14,13 @@ NEWSPIDER_MODULE = "books.spiders"
 
 ADDONS = {}
 
-
+FEEDS = {
+    "books.jl": {
+        "format": "jsonlines",
+        "encoding": "utf8",
+        "overwrite": True,
+    }
+}
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 # USER_AGENT = "books (+http://www.yourdomain.com)"
 
