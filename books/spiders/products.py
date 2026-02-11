@@ -23,9 +23,6 @@ class ProductsSpider(scrapy.Spider):
     def close(self, reason: str) -> None:
         if hasattr(self, "driver") and self.driver:
             self.driver.quit()
-            # def close(self, reason: str) -> None:
-    #     self.driver.close()
-    #     return self.close(reason)
 
     def parse(
             self, response: Response, **kwargs
